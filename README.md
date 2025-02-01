@@ -18,3 +18,38 @@ A sophisticated AI tool for personal finance management:
    ```bash
    git clone https://github.com/your-username/ai-personal-finance-planner-professional.git
    cd ai-personal-finance-planner-professional
+
+   Setup Environment:
+Create a .env file in src/ folder for your API keys and secrets.
+Install Dependencies:
+bash
+pip install -r requirements.txt
+Run with Docker (for production):
+bash
+docker-compose up --build
+
+Usage
+Start the server:
+bash
+python src/main.py
+Use API endpoints:
+/analyze_budget for budget analysis
+/investment_advice for investment suggestions
+/fetch_data to retrieve financial data
+
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Authors
+Your Name - Initial work - Your LinkedIn (your-linkedin-profile)
+
+#### `src/__init__.py`
+```python
+# Empty to make the directory a package
+
+These files provide a good starting point for your project. The __init__.py file in the services directory imports key functions, making them easily accessible. data_service.py includes methods for data processing and sanitization. The test files ensure that your services work as expected, with mock data and configurations where necessary. Remember to adjust these tests as your implementation evolves.
+
+This project setup follows professional practices like separation of concerns, environment variable management, and containerization for deployment. Remember to fill in actual API endpoints and keys in your .env file before sharing or deploying.
