@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - BANK_API_KEY=${BANK_API_KEY}
+      - BANK_API_ENDPOINT=${BANK_API_ENDPOINT}
+    volumes:
+      - ./src:/app/src
